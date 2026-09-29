@@ -1,2367 +1,392 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, viewport-fit=cover"
-    >
-
-    <meta
-        name="color-scheme"
-        content="dark"
-    >
-
-    <meta
-        name="theme-color"
-        content="#0f0d13"
-    >
-
-    <meta
-        name="description"
-        content="Official Privacy Policy for WMS - Winterman Music Spectrum."
-    >
-
-    <meta
-        name="robots"
-        content="index, follow"
-    >
-
-    <title>WMS Privacy Policy</title>
-
-    <style>
-        :root {
-            --bg: #0f0d13;
-            --card: #17131f;
-            --card-soft: #1b1625;
-            --text: #f4f0f8;
-            --muted: #b9afc5;
-            --line: #30283b;
-            --accent: #b78cff;
-            --accent-soft: #d5bdff;
-            --green: #a9e7bb;
-            --green-line: #365743;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            -webkit-text-size-adjust: 100%;
-        }
-
-        body {
-            margin: 0;
-
-            background:
-                radial-gradient(
-                    circle at top,
-                    #171020 0,
-                    var(--bg) 340px
-                );
-
-            color: var(--text);
-
-            font-family:
-                system-ui,
-                -apple-system,
-                BlinkMacSystemFont,
-                "Segoe UI",
-                Roboto,
-                Arial,
-                sans-serif;
-
-            font-size: 16px;
-            line-height: 1.7;
-        }
-
-        main {
-            width: min(
-                900px,
-                calc(100% - 28px)
-            );
-
-            margin: 0 auto;
-
-            padding:
-                max(
-                    28px,
-                    env(safe-area-inset-top)
-                )
-                0
-                max(
-                    48px,
-                    env(safe-area-inset-bottom)
-                );
-        }
-
-        header {
-            padding: 28px;
-
-            background:
-                linear-gradient(
-                    145deg,
-                    #1d1728,
-                    #15111d
-                );
-
-            border:
-                1px solid var(--line);
-
-            border-radius: 22px;
-
-            margin-bottom: 18px;
-        }
-
-        .brand {
-            color: var(--accent);
-
-            font-weight: 800;
-
-            letter-spacing:
-                0.08em;
-
-            text-transform:
-                uppercase;
-
-            font-size:
-                0.82rem;
-        }
-
-        h1 {
-            font-size:
-                clamp(
-                    2rem,
-                    8vw,
-                    3.5rem
-                );
-
-            line-height:
-                1.05;
-
-            margin:
-                0.35rem 0
-                0.85rem;
-        }
-
-        h2 {
-            margin:
-                0 0 0.85rem;
-
-            font-size:
-                clamp(
-                    1.25rem,
-                    5vw,
-                    1.55rem
-                );
-
-            line-height:
-                1.3;
-        }
-
-        h3 {
-            margin:
-                0 0 0.35rem;
-
-            font-size:
-                1.05rem;
-
-            line-height:
-                1.4;
-
-            color:
-                var(--accent-soft);
-        }
-
-        p {
-            margin:
-                0.7rem 0;
-        }
-
-        ul {
-            padding-left:
-                1.35rem;
-
-            margin:
-                0.7rem 0;
-        }
-
-        li {
-            margin:
-                0.48rem 0;
-        }
-
-        strong {
-            color: #ffffff;
-        }
-
-        a {
-            color: var(--accent);
-
-            text-decoration-thickness:
-                1px;
-
-            text-underline-offset:
-                3px;
-
-            overflow-wrap:
-                anywhere;
-        }
-
-        a:hover {
-            color:
-                #d5bdff;
-        }
-
-        section {
-            background:
-                var(--card);
-
-            border:
-                1px solid var(--line);
-
-            border-radius:
-                18px;
-
-            padding:
-                24px;
-
-            margin:
-                14px 0;
-        }
-
-        .muted {
-            color:
-                var(--muted);
-        }
-
-        .status {
-            display:
-                inline-block;
-
-            margin-top:
-                14px;
-
-            padding:
-                7px 12px;
-
-            border:
-                1px solid
-                var(--green-line);
-
-            border-radius:
-                999px;
-
-            color:
-                var(--green);
-
-            font-size:
-                0.88rem;
-        }
-
-        .summary {
-            display:
-                grid;
-
-            grid-template-columns:
-                repeat(
-                    2,
-                    minmax(0, 1fr)
-                );
-
-            gap:
-                12px;
-
-            margin-top:
-                18px;
-        }
-
-        .summary-item {
-            background:
-                var(--card-soft);
-
-            border:
-                1px solid
-                var(--line);
-
-            border-radius:
-                14px;
-
-            padding:
-                14px;
-        }
-
-        .summary-label {
-            display:
-                block;
-
-            color:
-                var(--muted);
-
-            font-size:
-                0.82rem;
-
-            margin-bottom:
-                4px;
-        }
-
-        .summary-value {
-            display:
-                block;
-
-            font-weight:
-                700;
-
-            color:
-                var(--text);
-        }
-
-        .data-list {
-            display:
-                grid;
-
-            gap:
-                12px;
-
-            margin-top:
-                16px;
-        }
-
-        .data-card {
-            background:
-                var(--card-soft);
-
-            border:
-                1px solid
-                var(--line);
-
-            border-radius:
-                15px;
-
-            padding:
-                18px;
-        }
-
-        .data-row {
-            display:
-                grid;
-
-            grid-template-columns:
-                125px 1fr;
-
-            gap:
-                14px;
-
-            padding:
-                9px 0;
-
-            border-bottom:
-                1px solid
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.06
-                );
-        }
-
-        .data-row:last-child {
-            border-bottom:
-                0;
-
-            padding-bottom:
-                0;
-        }
-
-        .data-label {
-            color:
-                var(--muted);
-
-            font-size:
-                0.9rem;
-
-            font-weight:
-                600;
-        }
-
-        .data-value {
-            min-width:
-                0;
-
-            overflow-wrap:
-                anywhere;
-        }
-
-        .note {
-            margin-top:
-                16px;
-
-            padding:
-                14px 16px;
-
-            background:
-                #14101b;
-
-            border:
-                1px solid
-                var(--line);
-
-            border-left:
-                3px solid
-                var(--accent);
-
-            border-radius:
-                12px;
-
-            color:
-                var(--muted);
-        }
-
-        .service-card {
-            margin:
-                14px 0;
-
-            padding:
-                18px;
-
-            background:
-                var(--card-soft);
-
-            border:
-                1px solid
-                var(--line);
-
-            border-radius:
-                15px;
-        }
-
-        .service-card:last-child {
-            margin-bottom:
-                0;
-        }
-
-        .permission-list {
-            display:
-                grid;
-
-            gap:
-                10px;
-
-            margin-top:
-                16px;
-        }
-
-        .permission-item {
-            padding:
-                15px;
-
-            background:
-                var(--card-soft);
-
-            border:
-                1px solid
-                var(--line);
-
-            border-radius:
-                14px;
-        }
-
-        .permission-name {
-            display:
-                block;
-
-            color:
-                var(--accent-soft);
-
-            font-weight:
-                700;
-
-            margin-bottom:
-                5px;
-
-            overflow-wrap:
-                anywhere;
-        }
-
-        .plans {
-            display:
-                grid;
-
-            grid-template-columns:
-                repeat(
-                    3,
-                    minmax(0, 1fr)
-                );
-
-            gap:
-                10px;
-
-            margin:
-                16px 0;
-        }
-
-        .plan {
-            padding:
-                15px 10px;
-
-            text-align:
-                center;
-
-            background:
-                var(--card-soft);
-
-            border:
-                1px solid
-                var(--line);
-
-            border-radius:
-                14px;
-        }
-
-        .plan-title {
-            display:
-                block;
-
-            font-weight:
-                750;
-
-            color:
-                var(--accent-soft);
-        }
-
-        .plan-type {
-            display:
-                block;
-
-            margin-top:
-                4px;
-
-            color:
-                var(--muted);
-
-            font-size:
-                0.82rem;
-        }
-
-        .contact-box {
-            padding:
-                18px;
-
-            background:
-                var(--card-soft);
-
-            border:
-                1px solid
-                var(--line);
-
-            border-radius:
-                15px;
-
-            margin-top:
-                14px;
-        }
-
-        footer {
-            text-align:
-                center;
-
-            color:
-                var(--muted);
-
-            font-size:
-                0.9rem;
-
-            padding:
-                28px 12px 6px;
-        }
-
-        .footer-brand {
-            display:
-                block;
-
-            color:
-                var(--accent-soft);
-
-            font-weight:
-                700;
-
-            margin-bottom:
-                4px;
-        }
-
-        @media (
-            max-width: 600px
-        ) {
-
-            main {
-                width:
-                    calc(
-                        100% - 24px
-                    );
-
-                padding-top:
-                    22px;
-            }
-
-            header {
-                padding:
-                    24px 22px;
-            }
-
-            section {
-                padding:
-                    21px 20px;
-            }
-
-            .summary {
-                grid-template-columns:
-                    1fr;
-            }
-
-            .data-row {
-                grid-template-columns:
-                    1fr;
-
-                gap:
-                    3px;
-            }
-
-            .data-label {
-                font-size:
-                    0.8rem;
-
-                text-transform:
-                    uppercase;
-
-                letter-spacing:
-                    0.04em;
-
-                color:
-                    var(--accent-soft);
-            }
-
-            .plans {
-                grid-template-columns:
-                    1fr;
-            }
-        }
-
-        @media (
-            prefers-reduced-motion:
-            reduce
-        ) {
-
-            html {
-                scroll-behavior:
-                    auto;
-            }
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0f0d13">
+  <meta name="description" content="WMS Privacy Policy: Android permissions, local music and media processing, Google AdMob, storage, and your privacy choices.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://goautoindo-commits.github.io/wms-privacy-policy/">
+  <title>WMS Privacy Policy</title>
+  <style>
+    /* Self-contained page: system fonts, no scripts, frameworks, or remote assets. */
+    :root {
+      --bg: #0f0d13;
+      --card: #17131f;
+      --card-soft: #1b1625;
+      --text: #f4f0f8;
+      --muted: #b9afc5;
+      --line: #30283b;
+      --accent: #b78cff;
+      --accent-soft: #d5bdff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top, #171020 0, var(--bg) 340px);
+      color: var(--text);
+      font: 16px/1.7 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      overflow-wrap: anywhere;
+    }
+    main {
+      width: min(900px, calc(100% - 28px));
+      margin: 0 auto;
+      padding: max(28px, env(safe-area-inset-top)) 0 max(48px, env(safe-area-inset-bottom));
+    }
+    header {
+      padding: 28px;
+      background: linear-gradient(145deg, #1d1728, #15111d);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      margin-bottom: 18px;
+    }
+    .brand {
+      color: var(--accent);
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-size: .82rem;
+    }
+    h1 { font-size: clamp(2rem, 8vw, 3.5rem); line-height: 1.05; margin: .35rem 0 .85rem; }
+    h2 { margin: 0 0 .85rem; font-size: clamp(1.25rem, 5vw, 1.55rem); line-height: 1.3; }
+    h3 { margin: 0 0 .35rem; font-size: 1.05rem; line-height: 1.4; color: var(--accent-soft); }
+    p { margin: .7rem 0; }
+    ul, ol { padding-left: 1.35rem; margin: .7rem 0; }
+    li { margin: .48rem 0; }
+    strong { color: #fff; }
+    a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:hover { color: var(--accent-soft); }
+    a:focus-visible { outline: 2px solid var(--accent-soft); outline-offset: 4px; border-radius: 2px; }
+    code { font: .88em/1.6 ui-monospace, SFMono-Regular, Consolas, monospace; overflow-wrap: anywhere; }
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 24px;
+      margin: 14px 0;
+      scroll-margin-top: 16px;
+    }
+    .muted { color: var(--muted); }
+    .summary { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 18px; }
+    .summary-item, .data-card, .service-card, .contact-box, .plan {
+      background: var(--card-soft);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      min-width: 0;
+    }
+    .summary-item { padding: 14px; }
+    .summary-label { display: block; color: var(--muted); font-size: .82rem; margin-bottom: 4px; }
+    .summary-value { display: block; font-weight: 700; }
+    .quick-links { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-top: 18px; }
+    .quick-links a { display: inline-flex; align-items: center; min-height: 44px; }
+    .data-list { display: grid; gap: 12px; margin-top: 16px; }
+    .data-card, .service-card, .contact-box { padding: 18px; }
+    .data-row { display: grid; grid-template-columns: 125px minmax(0, 1fr); gap: 14px; padding: 9px 0; border-bottom: 1px solid #ffffff0f; }
+    .data-row:last-child { border-bottom: 0; padding-bottom: 0; }
+    .data-label { color: var(--muted); font-size: .9rem; font-weight: 600; }
+    .data-value { min-width: 0; }
+    .note { margin-top: 16px; padding: 14px 16px; background: #14101b; border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 12px; color: var(--muted); }
+    .service-card, .contact-box { margin-top: 14px; }
+    .plans { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 16px 0; }
+    .plan { padding: 15px 10px; text-align: center; }
+    .plan-title { display: block; font-weight: 750; color: var(--accent-soft); }
+    .plan-type { display: block; margin-top: 4px; color: var(--muted); font-size: .82rem; }
+    /* Permission cells wrap long Android names instead of widening the page. */
+    .permission-table { width: 100%; border-collapse: collapse; table-layout: fixed; margin-top: 16px; }
+    .permission-table caption { text-align: left; color: var(--muted); font-size: .9rem; padding-bottom: 12px; }
+    .permission-table th, .permission-table td { padding: 14px 12px; text-align: left; vertical-align: top; border: 1px solid var(--line); }
+    .permission-table thead th { background: #21192c; color: var(--accent-soft); }
+    .permission-table thead th:first-child { width: 38%; }
+    .permission-table tbody th { background: var(--card-soft); font-weight: 600; }
+    .permission-table td { font-size: .94rem; }
+    .permission-table small { display: block; color: var(--muted); font-weight: 400; margin-top: 5px; }
+    footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 28px 12px 6px; }
+    .footer-brand { display: block; color: var(--accent-soft); font-weight: 700; margin-bottom: 4px; }
+    @media (max-width: 600px) {
+      main { width: calc(100% - 24px); padding-top: 22px; }
+      header { padding: 24px 20px; }
+      section { padding: 21px 16px; }
+      .summary, .plans { grid-template-columns: 1fr; }
+      .data-row { grid-template-columns: 1fr; gap: 3px; }
+      .data-label { font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; color: var(--accent-soft); }
+      .permission-table th, .permission-table td { padding: 10px 8px; }
+      .permission-table { font-size: .85rem; }
+      .permission-table td { font-size: .85rem; }
+      .permission-table thead th:first-child { width: 43%; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    @media print {
+      body { background: #fff; color: #111; }
+      main { width: 100%; padding: 0; }
+      header, section, .summary-item, .data-card, .service-card, .contact-box, .plan, .note,
+      .permission-table thead th, .permission-table tbody th { background: #fff; border-color: #ccc; }
+      h3, strong, a, .brand, .muted, .summary-label, .data-label, .note, .plan-title, .plan-type,
+      .permission-table thead th, .permission-table caption, .permission-table small, footer, .footer-brand { color: #222; }
+      .quick-links { display: none; }
+      h2, h3 { break-after: avoid; }
+      tr, .data-card { break-inside: avoid; }
+    }
+  </style>
 </head>
-
-
 <body>
-
-<main>
-
-
-    <!-- HEADER -->
-
+  <main id="top">
     <header>
-
-        <div class="brand">
-            WMS · Winterman Music Spectrum
-        </div>
-
-        <h1>
-            Privacy Policy
-        </h1>
-
-        <p class="muted">
-            This Privacy Policy explains
-            how WMS
-            (Winterman Music Spectrum)
-            accesses, processes, stores,
-            and shares information when
-            you use the Android
-            application.
-        </p>
-
-        <p>
-            <strong>
-                Effective date:
-            </strong>
-
-            September 29, 2026
-
-            <br>
-
-            <strong>
-                Last updated:
-            </strong>
-
-            September 29, 2026
-        </p>
-
-        <span class="status">
-            Public Google Play
-            Privacy Policy
-        </span>
-
-        <div class="summary">
-
-            <div class="summary-item">
-
-                <span class="summary-label">
-                    Application
-                </span>
-
-                <span class="summary-value">
-                    WMS
-                </span>
-
-            </div>
-
-
-            <div class="summary-item">
-
-                <span class="summary-label">
-                    Full name
-                </span>
-
-                <span class="summary-value">
-                    Winterman Music Spectrum
-                </span>
-
-            </div>
-
-
-            <div class="summary-item">
-
-                <span class="summary-label">
-                    Platform
-                </span>
-
-                <span class="summary-value">
-                    Android
-                </span>
-
-            </div>
-
-
-            <div class="summary-item">
-
-                <span class="summary-label">
-                    Core processing
-                </span>
-
-                <span class="summary-value">
-                    Primarily on-device
-                </span>
-
-            </div>
-
-        </div>
-
+      <div class="brand">WMS · Winterman Music Spectrum</div>
+      <h1>Privacy Policy</h1>
+      <p>This Privacy Policy explains how <strong>WMS (Winterman Music Spectrum)</strong> accesses, processes, stores, and shares information when you use the Android application.</p>
+      <p class="muted"><strong>Effective date:</strong> <time datetime="2026-09-29">September 29, 2026</time><br>
+        <strong>Last updated:</strong> <time datetime="2026-09-30">September 30, 2026</time></p>
+      <div class="summary">
+        <div class="summary-item"><span class="summary-label">Application</span><span class="summary-value">WMS</span></div>
+        <div class="summary-item"><span class="summary-label">Full name</span><span class="summary-value">Winterman Music Spectrum</span></div>
+        <div class="summary-item"><span class="summary-label">Platform</span><span class="summary-value">Android 8.0 and later</span></div>
+        <div class="summary-item"><span class="summary-label">Core processing</span><span class="summary-value">On your device</span></div>
+      </div>
+      <nav class="quick-links" aria-label="Privacy Policy sections">
+        <a href="#permissions">Permissions</a>
+        <a href="#advertising">Advertising</a>
+        <a href="#storage">Storage &amp; backup</a>
+        <a href="#deletion">Delete data</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
 
-
-
-    <!-- 1 -->
-
-    <section>
-
-        <h2>
-            1. Overview
-        </h2>
-
-        <p>
-            WMS
-            (Winterman Music Spectrum)
-            is an Android music player,
-            spectrum visualization,
-            synchronization,
-            and media export application.
-        </p>
-
-        <p>
-            WMS can play user-selected
-            music, generate animated
-            spectrum visualizations,
-            display user-selected image
-            or video backgrounds,
-            synchronize lyrics,
-            quotes and text,
-            save local project data,
-            and generate media exports.
-        </p>
-
-        <p>
-            Core music processing,
-            visualization,
-            synchronization,
-            project processing,
-            and media export operations
-            are designed to take place
-            primarily on the user's
-            device.
-        </p>
-
-        <p>
-            WMS does not currently provide
-            a WMS cloud account or
-            WMS-operated cloud storage
-            for uploading personal music,
-            backgrounds,
-            lyrics,
-            projects,
-            or exported media.
-        </p>
-
+    <section id="overview" aria-labelledby="overview-title">
+      <h2 id="overview-title">1. Overview</h2>
+      <p>WMS is a music player, spectrum visualization, synchronization, and media export application. It can play music, show image or video backgrounds, synchronize lyrics and quotes, save a local project, and export videos.</p>
+      <p>Music playback, spectrum analysis, editing, and media export take place on your device. WMS does not provide a WMS cloud account or a WMS-operated server for uploading your music, backgrounds, lyrics, quotes, projects, or exports.</p>
+      <p>Advertising involves Google services, and Android may back up eligible app data. These activities are described in <a href="#advertising">section 3</a> and <a href="#storage">section 8</a>.</p>
     </section>
 
-
-
-    <!-- 2 -->
-
-    <section>
-
-        <h2>
-            2. Information and media
-            WMS may access
-        </h2>
-
-        <p>
-            The information WMS accesses
-            depends on the features
-            you choose to use.
-        </p>
-
-        <div class="data-list">
-
-
-            <div class="data-card">
-
-                <h3>
-                    Audio and music files
-                </h3>
-
-                <div class="data-row">
-
-                    <div class="data-label">
-                        Purpose
-                    </div>
-
-                    <div class="data-value">
-                        Music playback,
-                        spectrum visualization,
-                        lyric synchronization,
-                        quote synchronization,
-                        project creation,
-                        and export.
-                    </div>
-
-                </div>
-
-                <div class="data-row">
-
-                    <div class="data-label">
-                        Processing
-                    </div>
-
-                    <div class="data-value">
-                        Primarily processed
-                        locally on your device.
-                    </div>
-
-                </div>
-
-                <div class="data-row">
-
-                    <div class="data-label">
-                        WMS cloud
-                    </div>
-
-                    <div class="data-value">
-                        WMS does not upload
-                        your selected music
-                        to a WMS-operated
-                        cloud server.
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="data-card">
-
-                <h3>
-                    Images and videos
-                </h3>
-
-                <div class="data-row">
-
-                    <div class="data-label">
-                        Purpose
-                    </div>
-
-                    <div class="data-value">
-                        Background media
-                        for preview,
-                        visualization,
-                        projects,
-                        and exports.
-                    </div>
-
-                </div>
-
-                <div class="data-row">
-
-                    <div class="data-label">
-                        Processing
-                    </div>
-
-                    <div class="data-value">
-                        User-selected images
-                        and videos are
-                        processed locally
-                        for WMS features.
-                    </div>
-
-                </div>
-
-                <div class="data-row">
-
-                    <div class="data-label">
-                        Sharing
-                    </div>
-
-                    <div class="data-value">
-                        They are not shared
-                        by WMS unless you
-                        explicitly choose
-                        to share an exported
-                        file through another
-                        application or service.
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="data-card">
-
-                <h3>
-                    Audio visualization data
-                </h3>
-
-                <div class="data-row">
-
-                    <div class="data-label">
-                        Purpose
-                    </div>
-
-                    <div class="data-value">
-                        Generate real-time
-                        spectrum visualization
-                        from audio playback.
-                    </div>
-
-                </div>
-
-                <div class="data-row">
-
-                    <div class="data-label">
-                        Recording
-                    </div>
-
-                    <div class="data-value">
-                        WMS does not
-                        intentionally create
-                        or store microphone
-                        voice recordings
-                        as part of the
-                        spectrum feature.
-                    </div>
-
-                </div>
-
-                <div class="data-row">
-
-                    <div class="data-label">
-                        Upload
-                    </div>
-
-                    <div class="data-value">
-                        Spectrum analysis data
-                        is not uploaded to
-                        a WMS-operated server.
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="data-card">
-
-                <h3>
-                    Lyrics, quotes and text
-                </h3>
-
-                <div class="data-row">
-
-                    <div class="data-label">
-                        Purpose
-                    </div>
-
-                    <div class="data-value">
-                        Tap-to-Sync,
-                        quote templates,
-                        timing,
-                        captions,
-                        project editing,
-                        and exported overlays.
-                    </div>
-
-                </div>
-
-                <div class="data-row">
-
-                    <div class="data-label">
-                        Storage
-                    </div>
-
-                    <div class="data-value">
-                        Stored locally
-                        when needed for
-                        WMS projects or
-                        generated lyric data.
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="data-card">
-
-                <h3>
-                    Project information
-                </h3>
-
-                <div class="data-row">
-
-                    <div class="data-label">
-                        Examples
-                    </div>
-
-                    <div class="data-value">
-                        Project settings,
-                        spectrum mode,
-                        background selection,
-                        timing,
-                        quote plans,
-                        export range,
-                        orientation,
-                        and visual settings.
-                    </div>
-
-                </div>
-
-                <div class="data-row">
-
-                    <div class="data-label">
-                        Storage
-                    </div>
-
-                    <div class="data-value">
-                        Stored locally
-                        on your device
-                        to support project
-                        save and resume.
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="data-card">
-
-                <h3>
-                    Exported media
-                </h3>
-
-                <div class="data-row">
-
-                    <div class="data-label">
-                        Purpose
-                    </div>
-
-                    <div class="data-value">
-                        Save content created
-                        by you using WMS.
-                    </div>
-
-                </div>
-
-                <div class="data-row">
-
-                    <div class="data-label">
-                        Storage
-                    </div>
-
-                    <div class="data-value">
-                        Exported files are
-                        saved to device
-                        storage or another
-                        location selected
-                        by you.
-                    </div>
-
-                </div>
-
-            </div>
-
+    <section id="information" aria-labelledby="information-title">
+      <h2 id="information-title">2. Information and media WMS accesses</h2>
+      <p>The information WMS accesses depends on the features you use and the permissions you grant.</p>
+      <div class="data-list">
+        <div class="data-card">
+          <h3>Audio and music library</h3>
+          <div class="data-row"><div class="data-label">Access</div><div class="data-value">With audio-library permission, WMS reads the device's audio catalogue, including file names, durations, and file references, to show your music library. You can also select an individual audio file through Android's file picker.</div></div>
+          <div class="data-row"><div class="data-label">Purpose</div><div class="data-value">Playback, playlists, spectrum visualization, synchronization, project resume, and export.</div></div>
+          <div class="data-row"><div class="data-label">Processing</div><div class="data-value">Audio and library information are processed locally. WMS does not send your music files or music library to an advertising service or a WMS server.</div></div>
         </div>
-
+        <div class="data-card">
+          <h3>Images and videos</h3>
+          <div class="data-row"><div class="data-label">Access</div><div class="data-value">You choose a background image or video through Android's file picker. WMS may retain read access to the selected file so it can reopen the background or resume a project.</div></div>
+          <div class="data-row"><div class="data-label">Purpose</div><div class="data-value">Local previews, backgrounds, visualization, and exported videos. WMS does not request broad photo or video library permissions for this selection.</div></div>
+        </div>
+        <div class="data-card">
+          <h3>Spectrum visualization</h3>
+          <div class="data-row"><div class="data-label">Access</div><div class="data-value">WMS uses Android's Visualizer to analyse audio from its own music player's audio session.</div></div>
+          <div class="data-row"><div class="data-label">Microphone</div><div class="data-value">Android requires the permission named <code>RECORD_AUDIO</code> for this API. WMS does not use it to record your microphone or conversations. The spectrum feature does not upload analysis data.</div></div>
+        </div>
+        <div class="data-card">
+          <h3>Lyrics, quotes, and project information</h3>
+          <div class="data-row"><div class="data-label">Examples</div><div class="data-value">Text you enter or import, lyric timing, quote timing and styles, selected audio title and file reference, background reference, spectrum settings, orientation, and export range.</div></div>
+          <div class="data-row"><div class="data-label">Storage</div><div class="data-value">Settings and the saved project are stored locally. Generated lyric and text files can be saved in shared device storage. Saved file references help WMS reopen media; they are not a WMS cloud copy of the media.</div></div>
+        </div>
+        <div class="data-card">
+          <h3>Exported media</h3>
+          <div class="data-row"><div class="data-label">Storage</div><div class="data-value">Exported MP4 videos are saved in your device's Movies/Winterman Music Spectrum folder. Generated lyric and text files use WMS folders in Documents.</div></div>
+          <div class="data-row"><div class="data-label">Sharing</div><div class="data-value">WMS does not automatically publish these files. If you share them using another app or service, that service handles the content you choose to share.</div></div>
+        </div>
+      </div>
+      <p class="note">If you select a file from a cloud provider shown in Android's file picker, that provider may retrieve the file using its own service. Its privacy practices apply to that retrieval.</p>
     </section>
 
-
-
-    <!-- 3 -->
-
-    <section>
-
-        <h2>
-            3. Advertising —
-            Google AdMob
-        </h2>
-
-        <p>
-            The Free version of WMS
-            may display advertising
-            using Google AdMob and
-            the Google Mobile Ads SDK.
-        </p>
-
-        <p>
-            Google Mobile Ads may
-            automatically process
-            certain device and usage
-            information for advertising,
-            analytics,
-            measurement,
-            security,
-            and fraud prevention.
-        </p>
-
-        <p>
-            Depending on SDK version,
-            device settings,
-            regional requirements,
-            consent choices,
-            and Google configuration,
-            this information may include:
-        </p>
-
-        <ul>
-
-            <li>
-                IP address,
-                which may be used
-                to estimate general
-                device location.
-            </li>
-
-            <li>
-                App and advertising
-                interactions,
-                including app launches,
-                taps,
-                impressions,
-                and video views.
-            </li>
-
-            <li>
-                Diagnostic and
-                performance information,
-                including app or SDK
-                startup information,
-                hang rate,
-                and energy usage.
-            </li>
-
-            <li>
-                Device or account-related
-                identifiers,
-                including the Android
-                advertising identifier
-                or app-scoped identifiers
-                where available.
-            </li>
-
-        </ul>
-
-        <p>
-            Advertising data handled
-            by Google is subject to
-            Google's privacy practices
-            and applicable user choices.
-        </p>
-
-        <div class="service-card">
-
-            <h3>
-                Google Mobile Ads
-                SDK disclosure
-            </h3>
-
-            <p>
-                Information about data
-                processed by the
-                Google Mobile Ads SDK:
-            </p>
-
-            <a
-                href="https://developers.google.com/admob/android/privacy/play-data-disclosure"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Google Mobile Ads SDK
-                — Play data disclosure
-            </a>
-
-        </div>
-
-
-        <div class="service-card">
-
-            <h3>
-                Google Privacy Policy
-            </h3>
-
-            <a
-                href="https://policies.google.com/privacy"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Google Privacy Policy
-            </a>
-
-        </div>
-
-
-        <div class="service-card">
-
-            <h3>
-                Advertising preferences
-            </h3>
-
-            <a
-                href="https://myadcenter.google.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Google My Ad Center
-            </a>
-
-        </div>
-
-        <div class="note">
-            Depending on the user's
-            country or region,
-            advertising consent or
-            privacy controls may be
-            presented before certain
-            advertising data is used.
-        </div>
-
+    <section id="advertising" aria-labelledby="advertising-title">
+      <h2 id="advertising-title">3. Advertising — Google AdMob</h2>
+      <p>WMS uses Google AdMob and the Google Mobile Ads SDK to display a banner. The current version uses Google's test advertising configuration.</p>
+      <p>Google discloses that its SDK automatically collects and shares these categories for advertising, analytics, and fraud prevention:</p>
+      <ul>
+        <li><strong>IP address:</strong> may indicate your general location.</li>
+        <li><strong>Interactions:</strong> app launches and interactions with ads.</li>
+        <li><strong>Diagnostics:</strong> information about app and SDK performance.</li>
+        <li><strong>Identifiers:</strong> advertising ID, app set ID, and applicable account-related identifiers.</li>
+      </ul>
+      <p>Availability depends on your device and advertising settings. WMS does not request GPS location permission for its banner, or supply your selected music, backgrounds, lyrics, or quote text to ad requests.</p>
+      <div class="service-card">
+        <h3>Google's advertising disclosures</h3>
+        <p><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads SDK — data disclosure</a><br>
+          <a href="https://policies.google.com/privacy">Google Privacy Policy</a></p>
+      </div>
+      <p class="note">This version does not include an in-app advertising-consent or privacy-options form. Available device and Google controls are listed in <a href="#choices">section 12</a>. This policy will be updated when the advertising configuration or available controls change.</p>
     </section>
 
-
-
-    <!-- 4 -->
-
-    <section>
-
-        <h2>
-            4. Paid plans and
-            Google Play Billing
-        </h2>
-
-        <p>
-            WMS may offer optional
-            paid access through
-            Google Play.
-        </p>
-
-        <div class="plans">
-
-            <div class="plan">
-
-                <span class="plan-title">
-                    Monthly
-                </span>
-
-                <span class="plan-type">
-                    Subscription
-                </span>
-
-            </div>
-
-
-            <div class="plan">
-
-                <span class="plan-title">
-                    Yearly
-                </span>
-
-                <span class="plan-type">
-                    Subscription
-                </span>
-
-            </div>
-
-
-            <div class="plan">
-
-                <span class="plan-title">
-                    Lifetime
-                </span>
-
-                <span class="plan-type">
-                    One-time purchase
-                </span>
-
-            </div>
-
-        </div>
-
-        <p>
-            Purchases and subscriptions
-            are processed by
-            Google Play Billing.
-        </p>
-
-        <p>
-            WMS does not directly receive
-            or store your complete
-            credit-card,
-            debit-card,
-            bank-account,
-            or other full payment
-            instrument details.
-        </p>
-
-        <p>
-            Google Play may provide
-            purchase-related information
-            required to activate,
-            verify,
-            restore,
-            or maintain purchased access.
-        </p>
-
-        <p>
-            Depending on the billing
-            implementation,
-            this may include information
-            such as:
-        </p>
-
-        <ul>
-
-            <li>
-                Product identifier.
-            </li>
-
-            <li>
-                Purchase status.
-            </li>
-
-            <li>
-                Subscription state.
-            </li>
-
-            <li>
-                Purchase token.
-            </li>
-
-            <li>
-                Entitlement information.
-            </li>
-
-        </ul>
-
-        <p>
-            Renewal,
-            cancellation,
-            refund,
-            and payment management
-            are handled according to
-            Google Play's applicable
-            policies and settings.
-        </p>
-
-        <p>
-            Google Play Billing
-            information:
-        </p>
-
-        <a
-            href="https://developer.android.com/google/play/billing/"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            Google Play Billing
-            documentation
-        </a>
-
+    <section id="paid-plans" aria-labelledby="paid-plans-title">
+      <h2 id="paid-plans-title">4. Paid plans</h2>
+      <p><strong>Paid plans are planned and are not available in the current version.</strong> WMS does not currently process in-app purchases, subscription transactions, or purchase tokens.</p>
+      <div class="plans" aria-label="Planned paid options">
+        <div class="plan"><span class="plan-title">Monthly</span><span class="plan-type">Planned subscription</span></div>
+        <div class="plan"><span class="plan-title">Yearly</span><span class="plan-type">Planned subscription</span></div>
+        <div class="plan"><span class="plan-title">Lifetime</span><span class="plan-type">Planned one-time purchase</span></div>
+      </div>
+      <p>This policy will be updated to describe payment processing, purchase verification, restoration, and associated data handling before paid access is introduced. WMS does not currently ask you to enter payment-card or bank-account details.</p>
     </section>
 
-
-
-    <!-- 5 -->
-
-    <section>
-
-        <h2>
-            5. Android permissions
-        </h2>
-
-        <p>
-            WMS may use Android
-            permissions or system
-            capabilities depending on
-            Android version and
-            the feature being used.
-        </p>
-
-        <div class="permission-list">
-
-
-            <div class="permission-item">
-
-                <span class="permission-name">
-                    Audio / Media access
-                </span>
-
-                Used to allow you
-                to select and play
-                music stored on
-                your device.
-
-            </div>
-
-
-            <div class="permission-item">
-
-                <span class="permission-name">
-                    READ_MEDIA_AUDIO
-                    or legacy storage access
-                </span>
-
-                Used on applicable
-                Android versions
-                to access audio files
-                selected for playback
-                and WMS projects.
-
-            </div>
-
-
-            <div class="permission-item">
-
-                <span class="permission-name">
-                    RECORD_AUDIO
-                </span>
-
-                Android may require this
-                permission for certain
-                audio visualization
-                or playback analysis
-                functions.
-
-                WMS uses this access
-                for spectrum visualization
-                and does not intentionally
-                save microphone voice
-                recordings as part of
-                this feature.
-
-            </div>
-
-
-            <div class="permission-item">
-
-                <span class="permission-name">
-                    Foreground media
-                    playback
-                </span>
-
-                Used to allow music
-                playback and media
-                controls to continue
-                appropriately while WMS
-                is not in the foreground.
-
-            </div>
-
-
-            <div class="permission-item">
-
-                <span class="permission-name">
-                    Bluetooth access
-                </span>
-
-                Where supported and
-                required by Android,
-                this may be used for
-                interaction with
-                Bluetooth audio devices
-                and media playback.
-
-            </div>
-
-
-            <div class="permission-item">
-
-                <span class="permission-name">
-                    Phone state
-                </span>
-
-                Where used,
-                phone-state information
-                may support playback
-                interruption or audio
-                behavior during calls.
-
-                WMS does not use this
-                permission to read
-                call content.
-            </div>
-
-        </div>
-
-        <p>
-            You can review or revoke
-            supported permissions at
-            any time through Android
-            system settings.
-        </p>
-
-        <p>
-            Revoking a permission
-            may cause the related
-            WMS feature to stop working.
-        </p>
-
+    <section id="permissions" aria-labelledby="permissions-title">
+      <h2 id="permissions-title">5. Android permissions</h2>
+      <p>The permissions below support WMS features and its bundled Google/Android components. Some require an Android permission prompt; others are normal system permissions without a prompt. The permissions shown by your device depend on its Android version.</p>
+      <table class="permission-table">
+        <caption>Permissions and their purpose</caption>
+        <thead><tr><th scope="col">Permission / availability</th><th scope="col">Why it is used</th></tr></thead>
+        <tbody>
+          <tr>
+            <th scope="row"><code>RECORD_AUDIO</code><small>Optional spectrum permission</small></th>
+            <td>Required by Android's Visualizer to analyse the music playing in WMS. It is not used to record the microphone. <strong>Music playback remains available if you deny this permission;</strong> the live spectrum may be unavailable.</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>READ_MEDIA_AUDIO</code><small>Android 13 and later</small></th>
+            <td>Reads shared audio files and their metadata to build the music library and open tracks you select. You can use the system file picker for individual files instead of granting library access.</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>READ_EXTERNAL_STORAGE</code><small>Android 8 through Android 12L; limited to API 32 and below</small></th>
+            <td>Legacy storage access used for the music library and local media on older Android versions. The older Android permission covers a broader storage category than the audio-specific permission on Android 13 and later.</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>WRITE_EXTERNAL_STORAGE</code><small>Android 8 and 9 only; limited to API 28 and below</small></th>
+            <td>Saves generated lyric/text files and exported videos in shared Documents and Movies folders on these older versions. Denying it can prevent those saves. Newer Android versions use scoped storage APIs for these outputs.</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>FOREGROUND_SERVICE</code><br><code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code><small>Where required by Android</small></th>
+            <td>Supports continued music playback and system media controls while WMS is in the background. The media playback notification shows the current track and playback controls; WMS does not read notifications from other apps.</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>INTERNET</code><br><code>ACCESS_NETWORK_STATE</code><small>Normal network permissions</small></th>
+            <td>Allows the advertising SDK to connect to its services and check connectivity. Core playback of accessible local files and local editing do not require an ad to load successfully.</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>com.google.android.gms.permission.AD_ID</code><small>Bundled advertising component</small></th>
+            <td>Allows Google's advertising component to access the advertising identifier when it is available under your Android settings. It does not grant access to your media files.</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>ACCESS_ADSERVICES_AD_ID</code><br><code>ACCESS_ADSERVICES_ATTRIBUTION</code><br><code>ACCESS_ADSERVICES_TOPICS</code><small>Bundled advertising component; on supported devices</small></th>
+            <td>Declares access to Android advertising ID, attribution, and Topics services. Actual availability and use depend on the device, SDK, and advertising settings.</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>WAKE_LOCK</code><small>Bundled supporting libraries</small></th>
+            <td>Allows a supporting library to keep the CPU awake temporarily while completing work. It does not itself grant access to personal content.</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="note">
+        <strong>File selection and permission choices</strong>
+        <p>Images, videos, audio, and lyric documents can be opened through Android's file picker. Access is granted to the selected document, and WMS may retain that read grant to reopen it later.</p>
+        <p>The current WMS app does not request camera, GPS location, contacts, SMS, call-log, phone-state, or Bluetooth discovery/connection permissions. Background selection does not request <code>READ_MEDIA_IMAGES</code>, <code>READ_MEDIA_VIDEO</code>, or all-files access (<code>MANAGE_EXTERNAL_STORAGE</code>).</p>
+      </div>
+      <p>You can review supported permissions under <strong>Android Settings → Apps → WMS → Permissions</strong>. Names vary by device. Denying audio-library access limits library browsing; denying spectrum access affects visualization. Revoking access to a file may require selecting it again.</p>
     </section>
 
-
-
-    <!-- 6 -->
-
-    <section>
-
-        <h2>
-            6. How WMS uses information
-        </h2>
-
-        <p>
-            Information accessed by WMS
-            is used to provide,
-            maintain,
-            and improve functions
-            requested by the user,
-            including:
-        </p>
-
-        <ul>
-
-            <li>
-                Music playback.
-            </li>
-
-            <li>
-                Spectrum visualization.
-            </li>
-
-            <li>
-                Lyrics and quote
-                synchronization.
-            </li>
-
-            <li>
-                Project save and resume.
-            </li>
-
-            <li>
-                Background media
-                processing.
-            </li>
-
-            <li>
-                Media export.
-            </li>
-
-            <li>
-                Purchase and
-                subscription access.
-            </li>
-
-            <li>
-                Advertising in
-                the Free version.
-            </li>
-
-            <li>
-                Security,
-                fraud prevention,
-                diagnostics,
-                and performance
-                where provided by
-                integrated Google services.
-            </li>
-
-        </ul>
-
+    <section id="use" aria-labelledby="use-title">
+      <h2 id="use-title">6. How information is used</h2>
+      <p>WMS uses local media, text, and settings to provide the features you select: music playback, visualization, lyric and quote timing, project save/resume, background previews, and media export.</p>
+      <p>Google handles advertising-related information as described in <a href="#advertising">section 3</a>. WMS does not operate its own cloud analytics or media-upload service.</p>
     </section>
 
-
-
-    <!-- 7 -->
-
-    <section>
-
-        <h2>
-            7. Data sharing
-        </h2>
-
-        <p>
-            WMS does not sell
-            your personal music files,
-            selected backgrounds,
-            lyrics,
-            quote text,
-            project files,
-            or locally generated exports.
-        </p>
-
-        <p>
-            Certain information may
-            be processed by third-party
-            services when necessary
-            to provide their functions.
-        </p>
-
-        <div class="service-card">
-
-            <h3>
-                Google AdMob /
-                Google Mobile Ads
-            </h3>
-
-            <p>
-                Used for advertising,
-                analytics,
-                measurement,
-                security,
-                and fraud prevention
-                in versions of WMS
-                that display ads.
-            </p>
-
-        </div>
-
-
-        <div class="service-card">
-
-            <h3>
-                Google Play Billing
-            </h3>
-
-            <p>
-                Used for purchases,
-                subscriptions,
-                purchase verification,
-                entitlement management,
-                and related transaction
-                functions.
-            </p>
-
-        </div>
-
-
-        <div class="service-card">
-
-            <h3>
-                Android and
-                Google Play services
-            </h3>
-
-            <p>
-                May provide operating
-                system,
-                media,
-                security,
-                store,
-                licensing,
-                and platform functions
-                required by the app.
-            </p>
-
-        </div>
-
-        <p>
-            If you explicitly share
-            exported media through
-            another application,
-            messaging service,
-            cloud storage provider,
-            social network,
-            website,
-            or other service,
-            that service's privacy
-            practices apply to
-            the information you
-            choose to share.
-        </p>
-
+    <section id="sharing" aria-labelledby="sharing-title">
+      <h2 id="sharing-title">7. Data sharing</h2>
+      <p>WMS does not sell your personal music files, selected backgrounds, lyrics, quotes, project files, or exports. It does not automatically upload this content to a WMS server.</p>
+      <ul>
+        <li><strong>Google advertising services:</strong> receive SDK data described in section 3.</li>
+        <li><strong>Android and your backup provider:</strong> may handle eligible app data during backup, restore, or device transfer, as described in section 8.</li>
+        <li><strong>Services you choose:</strong> a file provider or another app handles files that you select, open, or share through that service.</li>
+      </ul>
+      <p>Publicly saved files may also be accessible to other apps with appropriate storage access. The privacy practices of each service apply to information it receives.</p>
     </section>
 
-
-
-    <!-- 8 -->
-
-    <section>
-
-        <h2>
-            8. Local storage
-            and data retention
-        </h2>
-
-        <p>
-            WMS may store app settings,
-            project information,
-            cached data,
-            generated lyric timing,
-            quote timing,
-            and other feature-related
-            information locally
-            on your device.
-        </p>
-
-        <p>
-            Local app data generally
-            remains on the device
-            until one of the following
-            occurs:
-        </p>
-
-        <ul>
-
-            <li>
-                You delete the
-                relevant project
-                or content.
-            </li>
-
-            <li>
-                You clear WMS app data.
-            </li>
-
-            <li>
-                You uninstall WMS.
-            </li>
-
-            <li>
-                Android removes
-                temporary application data.
-            </li>
-
-        </ul>
-
-        <p>
-            Exported media remains
-            in the storage location
-            selected by you until
-            you delete or move it.
-        </p>
-
-        <p>
-            Information processed
-            by Google AdMob,
-            Google Play Billing,
-            or other Google services
-            is subject to the
-            retention practices
-            of those services.
-        </p>
-
+    <section id="storage" aria-labelledby="storage-title">
+      <h2 id="storage-title">8. Local storage, backup, and retention</h2>
+      <p>WMS keeps settings and its saved project in app storage. The project can include selected media references, the audio title, quote text, timing, and visual settings. Temporary processing files may be stored in the app's cache.</p>
+      <p>Saved app data remains until you replace or delete it, clear app storage, or uninstall WMS. Temporary files may be removed by WMS or Android. Original media, generated lyrics/text, and exported videos in shared storage remain until you delete them separately.</p>
+      <div class="note">
+        <strong>Android backup is enabled</strong>
+        <p>Depending on your device and backup settings, Android can back up eligible WMS settings and app-private project data to your backup provider, or transfer them to another device. They may be restored when you reinstall WMS or set up a device. This is handled by Android and your provider; WMS does not operate a backup server.</p>
+        <p>You can manage available backup and restore options in your device settings. Deleting local app data may not remove copies held by a backup provider.</p>
+      </div>
+      <p>Information handled by Google advertising services is retained under Google's policies. Information you submit through the public support repository remains subject to GitHub's controls and policies.</p>
     </section>
 
-
-
-    <!-- 9 -->
-
-    <section>
-
-        <h2>
-            9. Data deletion
-        </h2>
-
-        <p>
-            WMS does not currently
-            require a WMS cloud account.
-        </p>
-
-        <p>
-            Therefore,
-            there is currently no
-            WMS-hosted user profile
-            containing your personal
-            music or project library
-            that must be deleted
-            from a WMS server.
-        </p>
-
-        <p>
-            To remove locally stored
-            WMS information,
-            you may:
-        </p>
-
-        <ul>
-
-            <li>
-                Delete projects
-                or exported files.
-            </li>
-
-            <li>
-                Clear WMS storage
-                through Android settings.
-            </li>
-
-            <li>
-                Uninstall WMS.
-            </li>
-
-        </ul>
-
-        <p>
-            Data associated with
-            Google Play purchases
-            or Google advertising
-            services is managed
-            according to Google's
-            applicable account,
-            payment,
-            advertising,
-            privacy,
-            and retention policies.
-        </p>
-
+    <section id="deletion" aria-labelledby="deletion-title">
+      <h2 id="deletion-title">9. How to delete your data</h2>
+      <p>WMS does not provide user accounts or a WMS-hosted media library, so there is no WMS cloud account to delete.</p>
+      <ol>
+        <li><strong>Saved project:</strong> use the project's delete action in WMS to remove the saved project. Original media and exported files are separate.</li>
+        <li><strong>App settings and private data:</strong> open Android Settings → Apps → WMS → Storage, then choose Clear storage/Clear data, or uninstall WMS. Clearing cache alone does not remove all saved app data.</li>
+        <li><strong>Shared files:</strong> use your file manager or gallery to delete WMS-generated lyric/text files in Documents and exported videos in Movies/Winterman Music Spectrum. Uninstalling WMS does not necessarily remove them.</li>
+        <li><strong>Backups and shared copies:</strong> manage or delete them through the relevant backup, cloud-storage, or sharing service.</li>
+      </ol>
+      <p>For information handled by Google, use Google's privacy and advertising controls. For a question or request concerning WMS, use the <a href="#contact">contact mechanism below</a>.</p>
     </section>
 
-
-
-    <!-- 10 -->
-
-    <section>
-
-        <h2>
-            10. Security
-        </h2>
-
-        <p>
-            WMS is designed to
-            minimize unnecessary
-            transmission of
-            user-created media
-            by performing core
-            music,
-            spectrum,
-            synchronization,
-            project,
-            and export operations
-            primarily on the device.
-        </p>
-
-        <p>
-            Third-party services
-            integrated into WMS
-            may transmit information
-            using their own
-            secure communication
-            methods.
-        </p>
-
-        <p>
-            Google states that
-            information collected by
-            the Google Mobile Ads SDK
-            is encrypted in transit
-            using TLS.
-        </p>
-
-        <p>
-            No digital system,
-            network transmission,
-            or storage mechanism
-            can be guaranteed to be
-            completely secure.
-        </p>
-
+    <section id="security" aria-labelledby="security-title">
+      <h2 id="security-title">10. Security</h2>
+      <p>WMS processes core media features locally and keeps its private settings and project data in Android's app storage. Exported files are saved in shared storage so you can use them outside WMS.</p>
+      <p>Google states that data collected by its Mobile Ads SDK is encrypted during transmission using TLS. This does not mean that local projects or exported files have additional encryption provided by WMS.</p>
+      <p>No storage system or network transmission can be guaranteed to be completely secure.</p>
     </section>
 
-
-
-    <!-- 11 -->
-
-    <section>
-
-        <h2>
-            11. Children's privacy
-        </h2>
-
-        <p>
-            WMS is not specifically
-            directed to children
-            under the age of 13.
-        </p>
-
-        <p>
-            The application's
-            Google Play target audience,
-            advertising configuration,
-            and consent implementation
-            must remain consistent with
-            applicable Google Play
-            requirements and
-            applicable laws.
-        </p>
-
-        <p>
-            If WMS is later offered
-            specifically to children
-            or configured for
-            child-directed use,
-            the app configuration
-            and this Privacy Policy
-            will be updated as required.
-        </p>
-
+    <section id="children" aria-labelledby="children-title">
+      <h2 id="children-title">11. Children's privacy</h2>
+      <p>WMS is not specifically directed to children under the age of 13. If you have a concern about a child's information in connection with WMS, contact the developer using the mechanism in section 15 without posting the child's personal information publicly.</p>
+      <p>If the intended audience or data practices change, this policy will be updated accordingly.</p>
     </section>
 
-
-
-    <!-- 12 -->
-
-    <section>
-
-        <h2>
-            12. Your privacy choices
-        </h2>
-
-        <p>
-            Depending on your device,
-            country,
-            and available services,
-            you may be able to:
-        </p>
-
-        <ul>
-
-            <li>
-                Choose which media
-                files WMS can access.
-            </li>
-
-            <li>
-                Grant or revoke
-                Android permissions.
-            </li>
-
-            <li>
-                Delete local WMS
-                projects and data.
-            </li>
-
-            <li>
-                Uninstall WMS.
-            </li>
-
-            <li>
-                Manage Android
-                advertising settings.
-            </li>
-
-            <li>
-                Manage Google
-                advertising preferences.
-            </li>
-
-            <li>
-                Manage Google Play
-                subscriptions.
-            </li>
-
-            <li>
-                Request applicable
-                purchase refunds
-                through Google Play
-                where available.
-            </li>
-
-        </ul>
-
+    <section id="choices" aria-labelledby="choices-title">
+      <h2 id="choices-title">12. Your privacy choices</h2>
+      <ul>
+        <li>Choose individual files through Android's picker, or grant audio-library access for library browsing.</li>
+        <li>Allow or deny the optional permission used for live spectrum visualization.</li>
+        <li>Review and revoke runtime permissions in Android's WMS app settings.</li>
+        <li>Delete the saved project, clear app storage, and manage files and backups separately.</li>
+        <li>Use Android's advertising settings to reset or delete your advertising ID where supported.</li>
+        <li>Review Google's advertising preferences in <a href="https://myadcenter.google.com/">My Ad Center</a>. Available controls depend on the device and service.</li>
+      </ul>
+      <p>Paid-plan management is not available in the current version because paid plans have not been activated.</p>
     </section>
 
-
-
-    <!-- 13 -->
-
-    <section>
-
-        <h2>
-            13. Third-party services
-        </h2>
-
-        <p>
-            Third-party services used
-            by WMS operate under their
-            own terms and privacy
-            policies.
-        </p>
-
-        <p>
-            Relevant Google resources:
-        </p>
-
-        <div class="service-card">
-
-            <h3>
-                Google Privacy Policy
-            </h3>
-
-            <a
-                href="https://policies.google.com/privacy"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                https://policies.google.com/privacy
-            </a>
-
-        </div>
-
-
-        <div class="service-card">
-
-            <h3>
-                Google Play
-            </h3>
-
-            <a
-                href="https://play.google.com/about/play-terms/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Google Play Terms
-            </a>
-
-        </div>
-
-
-        <div class="service-card">
-
-            <h3>
-                Google Mobile Ads
-            </h3>
-
-            <a
-                href="https://developers.google.com/admob/android/privacy/play-data-disclosure"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Google Mobile Ads
-                data disclosure
-            </a>
-
-        </div>
-
+    <section id="third-parties" aria-labelledby="third-parties-title">
+      <h2 id="third-parties-title">13. Third-party services</h2>
+      <p>Third-party services operate under their own terms and privacy practices:</p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+        <li><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads SDK data disclosure</a></li>
+        <li><a href="https://play.google.com/about/play-terms/">Google Play Terms</a></li>
+        <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a> — hosting this policy and the public issue tracker</li>
+      </ul>
     </section>
 
-
-
-    <!-- 14 -->
-
-    <section>
-
-        <h2>
-            14. Changes to this
-            Privacy Policy
-        </h2>
-
-        <p>
-            This Privacy Policy
-            may be updated when:
-        </p>
-
-        <ul>
-
-            <li>
-                WMS features change.
-            </li>
-
-            <li>
-                Permissions change.
-            </li>
-
-            <li>
-                Third-party SDKs change.
-            </li>
-
-            <li>
-                Advertising behavior changes.
-            </li>
-
-            <li>
-                Billing functionality changes.
-            </li>
-
-            <li>
-                Google Play requirements change.
-            </li>
-
-            <li>
-                Applicable privacy
-                requirements change.
-            </li>
-
-        </ul>
-
-        <p>
-            When this policy is updated,
-            the
-            <strong>
-                Last updated
-            </strong>
-            date at the top of
-            the page will also
-            be updated.
-        </p>
-
+    <section id="changes" aria-labelledby="changes-title">
+      <h2 id="changes-title">14. Changes to this Privacy Policy</h2>
+      <p>This policy may be updated when features, permissions, SDKs, advertising, billing, or relevant requirements change. The <strong>Last updated</strong> date at the top of this page will reflect the latest revision.</p>
     </section>
 
-
-
-    <!-- 15 -->
-
-    <section>
-
-        <h2>
-            15. Contact
-        </h2>
-
-        <p>
-            For privacy questions,
-            concerns,
-            corrections,
-            or requests related to WMS,
-            you may contact the developer
-            through the official
-            WMS Privacy Policy repository.
-        </p>
-
-        <div class="contact-box">
-
-            <strong>
-                WMS Privacy Policy
-                Repository
-            </strong>
-
-            <p>
-
-                <a
-                    href="https://github.com/goautoindo-commits/wms-privacy-policy"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    github.com/goautoindo-commits/wms-privacy-policy
-                </a>
-
-            </p>
-
-        </div>
-
-
-        <div class="contact-box">
-
-            <strong>
-                Privacy Questions /
-                Issue Tracker
-            </strong>
-
-            <p>
-
-                <a
-                    href="https://github.com/goautoindo-commits/wms-privacy-policy/issues"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    github.com/goautoindo-commits/wms-privacy-policy/issues
-                </a>
-
-            </p>
-
-        </div>
-
-        <div class="note">
-            Do not post passwords,
-            full payment-card information,
-            private music files,
-            private videos,
-            authentication information,
-            or other sensitive personal
-            information in a public
-            GitHub issue.
-        </div>
-
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">15. Contact</h2>
+      <p>For privacy questions, concerns, corrections, or requests related to WMS, contact the WMS developer through the official repository's issue tracker.</p>
+      <div class="contact-box">
+        <h3>WMS Privacy Policy Repository</h3>
+        <p><a href="https://github.com/goautoindo-commits/wms-privacy-policy">github.com/goautoindo-commits/wms-privacy-policy</a></p>
+        <h3>Privacy questions and requests</h3>
+        <p><a href="https://github.com/goautoindo-commits/wms-privacy-policy/issues">Open the WMS issue tracker</a></p>
+      </div>
+      <p class="note">GitHub issues are public and submitting one requires a GitHub account. Describe your question without including passwords, payment information, private music or videos, authentication details, or other sensitive personal information.</p>
     </section>
 
-
-
-    <!-- 16 -->
-
-    <section>
-
-        <h2>
-            16. Application
-            identification
-        </h2>
-
-        <div class="data-list">
-
-            <div class="data-card">
-
-                <div class="data-row">
-
-                    <div class="data-label">
-                        App name
-                    </div>
-
-                    <div class="data-value">
-                        WMS
-                    </div>
-
-                </div>
-
-
-                <div class="data-row">
-
-                    <div class="data-label">
-                        Full name
-                    </div>
-
-                    <div class="data-value">
-                        Winterman Music Spectrum
-                    </div>
-
-                </div>
-
-
-                <div class="data-row">
-
-                    <div class="data-label">
-                        Platform
-                    </div>
-
-                    <div class="data-value">
-                        Android
-                    </div>
-
-                </div>
-
-
-                <div class="data-row">
-
-                    <div class="data-label">
-                        Distribution
-                    </div>
-
-                    <div class="data-value">
-                        Google Play
-                    </div>
-
-                </div>
-
-
-                <div class="data-row">
-
-                    <div class="data-label">
-                        Privacy Policy
-                    </div>
-
-                    <div class="data-value">
-
-                        <a
-                            href="https://goautoindo-commits.github.io/wms-privacy-policy/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            goautoindo-commits.github.io/wms-privacy-policy/
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
+    <section id="identification" aria-labelledby="identification-title">
+      <h2 id="identification-title">16. Application identification</h2>
+      <div class="data-row"><div class="data-label">App name</div><div class="data-value">WMS</div></div>
+      <div class="data-row"><div class="data-label">Full name</div><div class="data-value">Winterman Music Spectrum</div></div>
+      <div class="data-row"><div class="data-label">Package</div><div class="data-value"><code>com.winterman.musicspectrum</code></div></div>
+      <div class="data-row"><div class="data-label">Platform</div><div class="data-value">Android</div></div>
+      <div class="data-row"><div class="data-label">Privacy Policy</div><div class="data-value"><a href="https://goautoindo-commits.github.io/wms-privacy-policy/">goautoindo-commits.github.io/wms-privacy-policy/</a></div></div>
     </section>
-
-
-
-    <!-- FOOTER -->
 
     <footer>
-
-        <span class="footer-brand">
-            WMS · Winterman Music Spectrum
-        </span>
-
-        <span>
-            See the Music · Feel the Spectrum
-        </span>
-
-        <br>
-
-        <span>
-            Privacy Policy · 2026
-        </span>
-
+      <span class="footer-brand">WMS · Winterman Music Spectrum</span>
+      <span>See the Music · Feel the Spectrum</span><br>
+      <span>by Winterman</span>
+      <p>Privacy Policy · 2026 · <a href="#top">Back to top</a></p>
     </footer>
-
-
-</main>
-
+  </main>
 </body>
-
 </html>
